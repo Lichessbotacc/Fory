@@ -1,0 +1,12 @@
+# fly.toml for Fory Bot
+app = "fory-bot"
+primary_region = "fra"
+
+[build]
+  image = "python:3.11-slim"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+
+[processes]
+  app = "python bot.py"
